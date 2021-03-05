@@ -1,0 +1,4 @@
+docker build buildenv -t gtmos-buildenv      
+
+Mac/Nix:    docker run --rm -it -v $pwd:/root/env gtmos-buildenv
+Win :       docker run --rm -it -v %cd%:/root/env gtmos-buildenv
